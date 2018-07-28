@@ -1,0 +1,4 @@
+vendor/**
+debug*
+.idea
+.vscode
