@@ -24,30 +24,15 @@ import "fmt"
 //	}
 //}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 func calculate(numbers []int, justFunc func(int) int) int {
 	result := 0
+
 	for _, n := range numbers {
-		//only print n * 10 from unnamed func - callback
 		fmt.Println(justFunc(n))
-		//total sum all from slice with func callback
+
 		result += justFunc(n)
 	}
+
 	return result
 }
 
